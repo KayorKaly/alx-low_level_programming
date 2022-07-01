@@ -9,26 +9,26 @@
  */
 int main(void)
 {
-int num;
+int n;
 int last;
 
 srand(time(0));
-num = rand() - RAND_MAX / 2;
-last = num % 10;
+n = rand() - RAND_MAX / 2;
+last = n % 10;
 
 if (last == 0)
 {
-printf("Last digit of %d is %d and is 0\n", num, last);
+printf("Last digit of %d is %d and is 0\n", n, last);
 }
 else
 {
 if (last > 5)
 {
-printf("Last digit of %d is %d and is greater than 5\n", num, last);
+printf("Last digit of %d is %d and is greater than 5\n", n, last);
 }
 else if (last < 6)
 {
-printf("Last digit of %d is %d and is less than 6 and not 0\n", num, last);
+printf("Last digit of %d is %d and is less than 6 and not 0\n", n, last);
 }
 }
 return (0);
